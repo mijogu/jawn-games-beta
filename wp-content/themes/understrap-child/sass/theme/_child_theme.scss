@@ -1,0 +1,56 @@
+/******************* Change ACF Fields / Forms to Bootstrap styling ************************/
+
+/*
+.acf-button.disabled{
+    pointer-events: none;
+}
+.acf-loading, .acf-spinner {
+    height: 20px;
+    width: 20px;
+    vertical-align: text-top;
+    background: transparent url(/wp-admin/images/spinner.gif) no-repeat 50% 50%;
+    display:none;
+}
+*/
+
+
+.acf-form label {
+    font-size: 1.5em
+}
+
+.acf-button-group label {
+	margin: 5px;
+}
+
+ul.acf-checkbox-list li {
+	margin: 10px 20px;
+}
+
+.acf-fields .acf-field {
+    // margin-bottom: 50px;
+}
+
+.jg-button-group {
+    .btn {
+        margin: 5px 3px;
+
+        &:hover:not(.active):not(.disabled) {
+            // color: $secondary;
+            background-color: $cyan;
+            border-color: $cyan;
+        }
+
+        &.disabled {
+            background-color: $gray-200;
+            color: $gray-700;
+            border-color: $gray-700;
+        }
+    }
+
+}
+
+.change-league-header {
+    padding: .5rem 1rem;
+}
+
+
