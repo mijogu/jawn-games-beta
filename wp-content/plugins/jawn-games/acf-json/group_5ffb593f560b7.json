@@ -1,0 +1,273 @@
+{
+    "key": "group_5ffb593f560b7",
+    "title": "Games (NEW)",
+    "fields": [
+        {
+            "key": "field_615f443145d8b",
+            "label": "Choose league",
+            "name": "league",
+            "type": "acfe_hidden",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": ""
+        },
+        {
+            "key": "field_5ffb5a96862df",
+            "label": "Choose sport",
+            "name": "sport",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "248": "Air hockey",
+                "143": "Beer pong",
+                "36": "Beerski",
+                "43": "Bocce",
+                "256": "Bucketball",
+                "242": "Can Jam",
+                "255": "Chesties",
+                "257": "Codenames",
+                "37": "Cornhole",
+                "374": "Cricket",
+                "247": "Croquet",
+                "690": "Cutthroat",
+                "253": "Disc golf",
+                "45": "Eight Ball",
+                "249": "Foosball",
+                "585": "Horse",
+                "244": "Horseshoes",
+                "40": "Kubb",
+                "39": "Ladderball",
+                "46": "Nine Ball",
+                "44": "Ping Pong",
+                "147": "Poker",
+                "254": "Slamball",
+                "35": "Spikeball",
+                "245": "Tetherball",
+                "42": "Three Hole",
+                "38": "Trashcock",
+                "246": "Tug-o-war",
+                "596": "Volleyball",
+                "41": "Washers",
+                "252": "Washers"
+            },
+            "allow_null": 1,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_615f443145dbc",
+            "label": "Game state",
+            "name": "game_state",
+            "type": "acfe_hidden",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "started"
+        },
+        {
+            "key": "field_6169f423e1e92",
+            "label": "Choose scoring type",
+            "name": "choose_scoring_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ffb5a96862df",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 1,
+            "choices": {
+                "scores": "Enter scores",
+                "winner": "Choose winner"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "scores",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6169eadbbe96f",
+            "label": "Teams",
+            "name": "teams",
+            "type": "repeater",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ffb5a96862df",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "acfe_repeater_stylised_button": 1,
+            "collapsed": "",
+            "min": 2,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add another team",
+            "sub_fields": [
+                {
+                    "key": "field_6169eb18be971",
+                    "label": "Players",
+                    "name": "players",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "players-input",
+                        "id": ""
+                    },
+                    "hide_admin": 0,
+                    "choices": {
+                        "user_12": "Jarrod",
+                        "user_9": "Christian",
+                        "user_25": "Dan Hamill",
+                        "user_1": "Mike Gunn",
+                        "user_10": "Money",
+                        "user_11": "Adam Root"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "return_format": "value",
+                    "save_custom": 0
+                },
+                {
+                    "key": "field_6169eb5abe972",
+                    "label": "Score",
+                    "name": "score",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6169f423e1e92",
+                                "operator": "==",
+                                "value": "scores"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "score-input",
+                        "id": ""
+                    },
+                    "hide_admin": 0,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_6169eb65be973",
+                    "label": "Did they win?",
+                    "name": "win",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6169f423e1e92",
+                                "operator": "==",
+                                "value": "winner"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "win-input",
+                        "id": ""
+                    },
+                    "hide_admin": 0,
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "jg_game"
+            }
+        ],
+        [
+            {
+                "param": "af_form",
+                "operator": "==",
+                "value": "form_615deae16f142"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1634919828
+}

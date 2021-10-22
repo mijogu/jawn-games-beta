@@ -1,0 +1,46 @@
+##########################################
+### VARIABLES
+##########################################
+    # The following variables are being defined/used during testing. 
+    # This file and the following variables work with the 
+    # VS Code "Rest Client extension" which can be found here:
+    # https://github.com/Huachao/vscode-restclient
+
+@host = https://api.jawngames.local
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9nYXRlZC13b29jb21tZXJjZS5sb2NhbCIsImlhdCI6MTU4Mzk0MjE2MCwibmJmIjoxNTgzOTQyMTYwLCJleHAiOjE1ODQ1NDY5NjAsImRhdGEiOnsidXNlciI6eyJpZCI6IjMzNDEifX19.5CFiqxRRs0q0j38-BVUX5E1HuDwaaT81PabQLyTusRk
+
+
+@username = jawngamemaster
+@email = mike2@darngood.io
+@password = C3wGahuUEivPRgm
+
+
+########################################################
+### GET A TOKEN FOR USERNAME AND PASSWORD 
+##########################################
+    # We are using the "JWT Authentication for the WP REST API" plugin, which can be found here:
+    # https://github.com/Tmeister/wp-api-jwt-auth
+    # Supply the endpoint with a (previously created) WordPress username and
+    # password to get a JWT Token which can be stored/used in all subsequent API calls. 
+
+    # Sample endpoint: POST http://gatedsite1.visagedevsite.info/wp-json/jwt-auth/v1/token/
+
+POST {{host}}/wp-json/jwt-auth/v1/token/ HTTP/1.1
+content-type: application/json
+
+{
+    "username": "{{username}}",
+    "password": "{{password}}"
+}
+
+#########
+GET {{host}}/wp-json/acf/v3/sports HTTP/1.1
+content-type: application/json
+
+#########
+GET {{host}}/wp-json/wp/v2/sports
+content-type: application/json
+
+#########
+GET {{host}}/wp-json/wp/v2/users
+content-type: application/json

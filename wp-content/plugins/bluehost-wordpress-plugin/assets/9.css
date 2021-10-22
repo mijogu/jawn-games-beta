@@ -1,0 +1,6 @@
+.page-home__container{max-width:822px}
+
+.coming-soon-notice{margin-bottom:48px !important}.coming-soon-notice .app-heading{margin-bottom:9px !important}.coming-soon-notice .action{display:flex;align-items:flex-end;flex-direction:row-reverse}@media (max-width: 600px){.coming-soon-notice .action{padding-top:24px;flex-direction:column;align-items:center}.coming-soon-notice .action .components-button{width:80%}}
+
+.welcome-section{max-width:600px;margin-bottom:48px}.welcome-section p{font-size:16px}
+

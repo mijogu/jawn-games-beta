@@ -1,0 +1,233 @@
+{
+    "key": "group_615f443140647",
+    "title": "Game [OLD]",
+    "fields": [
+        {
+            "key": "field_615f443145dd1",
+            "label": "What sport?",
+            "name": "group_sport",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "169": "Karaoke",
+                "147": "Poker",
+                "43": "Bocce"
+            },
+            "allow_null": 1,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5ffb5e37862e8",
+            "label": "Team 1 players",
+            "name": "team_1",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "user_12": "Jarrod",
+                "user_9": "Christian",
+                "user_19": "Dough",
+                "user_17": "Adam Edelhauser",
+                "user_1": "Mike Gunn",
+                "user_20": "Brian",
+                "user_21": "JoeBo",
+                "user_22": "JonathanR",
+                "user_14": "Deriek",
+                "user_10": "Money",
+                "user_18": "Chris",
+                "user_11": "Adam Root",
+                "user_15": "Steve",
+                "user_16": "Brett",
+                "user_23": "Tiny Heiny",
+                "user_13": "Trey"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "array",
+            "save_custom": 0
+        },
+        {
+            "key": "field_615f443145ddc",
+            "label": "Who playin?",
+            "name": "players",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "user_12": "Jarrod",
+                "user_1": "Mike Gunn",
+                "user_10": "Money"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "array",
+            "save_custom": 0
+        },
+        {
+            "key": "field_615cd3f25a842",
+            "label": "Team 2 players",
+            "name": "team_2",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "user_12": "Jarrod",
+                "user_9": "Christian",
+                "user_19": "Dough",
+                "user_17": "Adam Edelhauser",
+                "user_1": "Mike Gunn",
+                "user_20": "Brian",
+                "user_21": "JoeBo",
+                "user_22": "JonathanR",
+                "user_14": "Deriek",
+                "user_10": "Money",
+                "user_18": "Chris",
+                "user_11": "Adam Root",
+                "user_15": "Steve",
+                "user_16": "Brett",
+                "user_23": "Tiny Heiny",
+                "user_13": "Trey"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "array",
+            "save_custom": 0
+        },
+        {
+            "key": "field_615f44a41beb9",
+            "label": "Who won?",
+            "name": "winners",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "h4",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "choices": {
+                "user_4": "Adam Root",
+                "user_8": "Brett Mahon",
+                "user_3": "Christian Kunkel",
+                "user_7": "Chris McKinney",
+                "user_6": "Jarrod Coburn",
+                "user_2": "Mike Gunn",
+                "user_5": "Money Hua"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "array",
+            "save_custom": 0
+        },
+        {
+            "key": "field_5ffb93c7b6340",
+            "label": "Team 1 Score",
+            "name": "team_1_score",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5ffb966fb6344",
+            "label": "Team 2 Score",
+            "name": "team_2_score",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_admin": 0,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "jg_game"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1634777782
+}
