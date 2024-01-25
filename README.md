@@ -14,3 +14,5 @@ Instead of just tracking and awarding points for wins, Jawn Games gives players 
 At the end of the day with Jawn Games, the winner of the day isn't the person that won the most games. It's the person that PLAYED the most. 
 
 That's what it's all about. 
+
+NOTE: This is the beta verson of Jawn Games. Version 2.0 is under construction and being built in Reach Native as a mobile app.
